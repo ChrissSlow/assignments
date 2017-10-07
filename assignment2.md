@@ -22,7 +22,6 @@ Folgendes Material kann Ihnen helfen
     - S. 277-284 [Beginning the Linux Command Line](https://link.springer.com/book/10.1007%2F978-1-4302-6829-1) (aus dem Hochschulnetz kostenlos)
     - Speziell unter Windows: [Key-basierte SSH Logins mit PuTTY](https://www.howtoforge.de/anleitung/key-basierte-ssh-logins-mit-putty/3/)
   * Netzwerke:
-    - [VAR Folien - Kapitel zu Netzwerken](https://moodle.hs-mannheim.de/mod/url/view.php?id=58768)
     - S. 117ff. [Christian Baun. Computernetze kompakt](http://link.springer.com/book/10.1007/978-3-662-46932-3) (aus dem Hochschulnetz kostenlos)
 
 _Abgabe_: *Keine*. Sie werden das Wissen in der nächsten Lehrveranstaltung anwenden. Sie können gerne vorher schon mit dem Zugriff auf die Server experimentieren.
