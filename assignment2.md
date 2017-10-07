@@ -1,4 +1,4 @@
-# Assignment 2: Vorbereitung Server-Führerschein
+# Assignment 2: Server-Führerschein
 
 *Achtung: Dieses Assignment ist als Hausaufgabe gedacht. Bitte erledigen Sie die Punkte bis zur Nächsten Vorlesung am 12.10*
 
