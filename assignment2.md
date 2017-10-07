@@ -24,4 +24,14 @@ Folgendes Material kann Ihnen helfen
   * Netzwerke:
     - S. 117ff. [Christian Baun. Computernetze kompakt](http://link.springer.com/book/10.1007/978-3-662-46932-3) (aus dem Hochschulnetz kostenlos)
 
+
+## User auf den Server anlegen
+
+Legen Sie auf den Servern für die Mitglieder Ihres Teams User an und installieren Sie entsprechend weitere SSH-Keys, damit Sie sich auch unter Ihrem User anmelden können.
+
+Diese User sollten Sie grundsätzlich benutzen und nicht den Root-Zugang, der nur für Notfälle und bestimmte administrative Aufgaben gedacht ist.
+
+
+## Abgabe
+
 _Abgabe_: *Keine*. Sie werden das Wissen in der nächsten Lehrveranstaltung anwenden. Sie können gerne vorher schon mit dem Zugriff auf die Server experimentieren.
