@@ -11,6 +11,16 @@ Den *Ablauf eines Requests* können Sie am besten mit einem Debugger herausfinde
 
 Die *grundlegende Struktur* lässt sich gut aus den Quelltexten extrahieren, indem Sie die `import`-Statements der Klassen anschauen. Diese Struktur können Sie mit Werkzeugen wie _graphviz_ visualieren. Schauen Sie im Internet, ob Sie noch andere Werkzeuge finden können, um die Aufgabe zu erledigen. Bei der Analyse der Abhängigkeiten wollen Sie möglicherweise die Standardbibliothek (`java.*`) ignorieren, damit . Wichtige Werkzeuge für die Analyse der Quelltexte sind `sed` und `grep`, die Sie sich ansehen sollten.
 
+```shell
+echo "digraph {" > test.dot ; grep -R "^import" * | sed -E "s/\//./g" | \
+sed -E "s/\.java//g" | sed -E "s/\.\*//g" | sed -E "s/import //g" | \
+grep -v ":java" | grep -v ":javax" | sed -E "s/;//g" | sed -E "s/:/ -> /" | \
+grep -v "\.properties" | sed -E "s/\./_/g" | sed -E "s/_[A-Z].* ->/ ->/g" | \
+sed -E "s/-> ([a-z_]*)_[A-Z][a-zA-Z]*/-> \1/g" | sed -E "s/org_apache_//g" | \
+grep -v "juli_logging" | grep -v "tomcat_util" | grep -v "cataline_util" | \
+sort | uniq >> test.dot ; echo "}" >> test.dot ; \
+dot -Tpdf test.dot > test.pdf
+```
 
 ## Tomcat einchecken
 
